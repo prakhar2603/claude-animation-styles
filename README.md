@@ -28,11 +28,12 @@ object keeps its own colour), closed shapes filled with the background so lines 
 glow on the lines. Lines draw themselves on first, then the scene moves. My scene:
 
 **4. PS2 3D**
-Make an animated scene as a single HTML file, 1080x1920, that looks like an early-2000s PlayStation 2 game. Split the
-scene into 4 SVG layers (sky, buildings, road, the main subject) stacked in CSS 3D (preserve-3d, different
-translateZ) and slowly orbit the camera. Make round things low-poly (6 or 7 sided), give every shape hard banded
-shading with an SVG lighting filter (feDiffuseLighting + feComponentTransfer discrete), add distance fog, and render
-it slightly low-res with a small pixelate filter. My scene:
+Make an animated scene as a single HTML file, 1080x1920, that looks like an early-2000s PlayStation 2 game at dusk.
+Split the scene into 4 SVG layers (sky, buildings, road, the main subject) stacked in CSS 3D (preserve-3d, different
+translateZ) and slowly orbit the camera. Purple-to-orange dusk sky, distance fog, trees made of chunky voxel blocks,
+jaggy low-poly grass, round things 6 or 7 sided. Give every shape a low-res texture (feTurbulence noise multiplied
+in) and hard banded shading (feDiffuseLighting + feComponentTransfer discrete), then render it slightly low-res with
+a small pixelate filter. My scene:
 
 **5. Comic Book**
 Make an animated scene as a single HTML file with inline SVG, 1080x1920, in pop-art comic style: bright flat
@@ -56,10 +57,11 @@ the camera slowly around them. Blur the far layers for depth of field (CSS filte
 rounded lighting (feSpecularLighting) and a soft shadow, and add a warm colour grade on top. My scene:
 
 **9. Lego Style**
-Make an animated scene as a single HTML file with inline SVG, 1080x1920, built like LEGO bricks: classic LEGO colours
-(red, blue, yellow, green, grey), round studs on the top edge of every block, brick seams on walls, a grey baseplate
-with a stud pattern for the ground, and a glossy plastic look from an SVG lighting filter with a small drop shadow.
-My scene:
+Make an animated scene as a single HTML file, 1080x1920, that looks like a macro photo of a LEGO set. Split the scene
+into SVG layers in CSS 3D and move the camera slowly, with a very shallow depth of field: the background bricks heavily
+blurred (CSS filter: blur 10px), the main subject sharp. The ground is a green LEGO baseplate with rows of 3D studs in
+perspective (bigger towards the camera, each with a side, a top and a highlight), studs on top of every block, brick
+seams on walls, stepped brick trees, classic LEGO colours and a glossy plastic look (feSpecularLighting). My scene:
 
 **10. Clay 3D**
 Make an animated scene as a single HTML file with inline SVG, 1080x1920, that looks like soft clay or plasticine:
