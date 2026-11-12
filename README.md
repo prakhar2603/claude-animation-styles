@@ -28,12 +28,13 @@ object keeps its own colour), closed shapes filled with the background so lines 
 glow on the lines. Lines draw themselves on first, then the scene moves. My scene:
 
 **4. PS2 3D**
-Make an animated scene as a single HTML file, 1080x1920, that looks like an early-2000s PlayStation 2 game at dusk.
-Split the scene into 4 SVG layers (sky, buildings, road, the main subject) stacked in CSS 3D (preserve-3d, different
-translateZ) and slowly orbit the camera. Purple-to-orange dusk sky, distance fog, trees made of chunky voxel blocks,
-jaggy low-poly grass, round things 6 or 7 sided. Give every shape a low-res texture (feTurbulence noise multiplied
-in) and hard banded shading (feDiffuseLighting + feComponentTransfer discrete), then render it slightly low-res with
-a small pixelate filter. My scene:
+Make an animated scene as a single HTML file, 1080x1920, that looks like a night-time level from an early-2000s
+PlayStation 2 game. Split the scene into 4 SVG layers (sky, buildings, road, the main subject) stacked in CSS 3D
+(preserve-3d, different translateZ) and slowly orbit the camera. Deep purple-to-orange night sky, glowing windows,
+trees made of chunky voxel blocks, jaggy low-poly grass, round things 6 or 7 sided. Give every shape a low-res texture
+(feTurbulence noise multiplied in) and hard banded shading (feDiffuseLighting + feComponentTransfer discrete), render it
+slightly low-res with a small pixelate filter, and put a game HUD on top in a pixel font: a health bar, a money
+counter, a mission name and a round minimap with an arrow. My scene:
 
 **5. Comic Book**
 Make an animated scene as a single HTML file with inline SVG, 1080x1920, in pop-art comic style: bright flat
@@ -51,10 +52,12 @@ background: only the main subject, the ground line and the sun as thin concentri
 lines with a soft gold glow. Nothing else in the frame. Every line draws itself on slowly. My scene:
 
 **8. 3D CGI**
-Make an animated scene as a single HTML file, 1080x1920, that looks like a soft 3D animated film. Split the scene into
-4 SVG layers (sky, buildings, road, the main subject) stacked in CSS 3D (preserve-3d, different translateZ) and move
-the camera slowly around them. Blur the far layers for depth of field (CSS filter: blur), give every shape soft
-rounded lighting (feSpecularLighting) and a soft shadow, and add a warm colour grade on top. My scene:
+Make an animated scene as a single HTML file, 1080x1920, that looks like a shot from a 3D animated film at golden
+hour. Split the scene into 4 SVG layers (sky, buildings, road, the main subject) stacked in CSS 3D (preserve-3d,
+different translateZ) and move the camera slowly around them. Warm low sun with god rays, a bloom and a few lens flare
+circles, the far layers blurred for depth of field (CSS filter: blur), soft rounded lighting on every shape
+(feSpecularLighting) with soft shadows, a teal-and-orange colour grade on top, and black cinema bars at the top and
+bottom. My scene:
 
 **9. Lego Style**
 Make an animated scene as a single HTML file, 1080x1920, that looks like a macro photo of a LEGO set. Split the scene
@@ -64,7 +67,8 @@ perspective (bigger towards the camera, each with a side, a top and a highlight)
 seams on walls, stepped brick trees, classic LEGO colours and a glossy plastic look (feSpecularLighting). My scene:
 
 **10. Clay 3D**
-Make an animated scene as a single HTML file with inline SVG, 1080x1920, that looks like soft clay or plasticine:
-pastel colours and an SVG lighting filter (feGaussianBlur on the alpha + feSpecularLighting) on every shape so it
-looks rounded and shiny like modelling clay, slightly lumpy edges (feDisplacementMap), and soft shadows underneath.
-My scene:
+Make an animated scene as a single HTML file with inline SVG, 1080x1920, that looks like a soft pastel clay set:
+a cream background and ground (no blue sky), mint, pink, butter and lavender pastels, round shapes, and an SVG
+lighting filter (feGaussianBlur on the alpha + soft feSpecularLighting) that gives every shape a matte, rounded,
+slightly lumpy plasticine look (feDisplacementMap), soft shadows underneath, and a light white haze over the top so
+it stays soft and low-contrast. My scene:
